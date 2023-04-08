@@ -1,14 +1,5 @@
 @charset "utf-8";
 
-/* @keyframes bg-color {
-  0% { background-color: #f17b6e; }
-  20% { background-color: #ffeb9d; }
-  40% { background-color: #91f7e2; }
-  60% { background-color: #6ac3ff; }
-  80% { background-color: #e19bfd; }
-  100% { background-color: #fcbab3; }
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -38,6 +29,7 @@ ul li {
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
+  backface-visibility: hidden;
   z-index: 2;
   opacity: 0;
   animation: appear 2s 2.5s forwards;
