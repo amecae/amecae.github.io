@@ -228,6 +228,10 @@ ul li {
   padding: 4px 0;
 }
 
+.profile li b {
+  font-size: 18px;
+}
+
 .profile-image {
   width: 150px;
   height: 150px;
