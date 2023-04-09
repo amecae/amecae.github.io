@@ -20,7 +20,7 @@ ul li {
 .firstview {
   position: relative;
   width: 100%;
-  min-height: 100px;
+  min-height: 100vh;
   background-color: #2acadc;
 }
 
@@ -126,7 +126,7 @@ ul li {
   }
 }
 
-@keyframes dripple {
+/* @keyframes dripple {
   0% {
     width: 150px;
     height: 150px;
@@ -140,7 +140,7 @@ ul li {
     top: -20%;
     opacity: 0;
   }
-}
+} */
 
 .works {
   padding: 32px 120px 56px;
