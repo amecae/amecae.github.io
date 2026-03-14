@@ -2,70 +2,237 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ame portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel=”icon” href="./img/girl.png">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <title>Kae Amenomori — Designer</title>
+  <link rel="icon" href="./img/girl.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Noto+Sans+JP:wght@300;400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main>
-    <body>
-      <div class="firstview">
-        <div class="firstview-title">
-          <h1>kae<br>amenomori</h1>
-          <img class="girl" src="./img/girl.png">
-          <a class="arrow-icon" href="#works"><i class="fas fa-angle-down"></i></a>
+  <div id="cur"></div>
+  <div id="cur-ring"></div>
+  <div id="progress"></div>
+  <!-- Marquee -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>UI Designer</span><span class="sep">★</span>
+      <span>UX Design</span><span class="sep">★</span>
+      <span>Figma</span><span class="sep">★</span>
+      <span>Visual Design</span><span class="sep">★</span>
+      <span>Photoshop</span><span class="sep">★</span>
+      <span>Illustrator</span><span class="sep">★</span>
+      <span>Tokyo Based</span><span class="sep">★</span>
+      <span>Freelance OK</span><span class="sep">★</span>
+      <!-- duplicate for seamless loop -->
+      <span>UI Designer</span><span class="sep">★</span>
+      <span>UX Design</span><span class="sep">★</span>
+      <span>Figma</span><span class="sep">★</span>
+      <span>Visual Design</span><span class="sep">★</span>
+      <span>Photoshop</span><span class="sep">★</span>
+      <span>Illustrator</span><span class="sep">★</span>
+      <span>Tokyo Based</span><span class="sep">★</span>
+      <span>Freelance OK</span><span class="sep">★</span>
+    </div>
+  </div>
+  <!-- Nav -->
+  <nav>
+    <a href="#" class="nav-logo">KAE.DEV</a>
+    <ul class="nav-links">
+      <li><a href="#works">Works</a></li>
+      <li><a href="#profile">About</a></li>
+      <li><a href="mailto:hello@kaeamenomori.com">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-tag"><span class="blink-dot"></span> Available for freelance</div>
+      <h1 class="hero-title">
+        <span class="t-pink">KAE</span><br>
+        AME<br>
+        <span class="t-outline">NOMORI</span>
+      </h1>
+      <p class="hero-sub">
+        UI/UXデザイナー。東京を拠点に、アプリやWebサービスのデザインを手がけています。<br>
+        使いやすくて、見ていて楽しいデザインを作ります。
+      </p>
+      <div class="hero-cta">
+        <a href="#works" class="btn btn-primary">View Works →</a>
+        <a href="#profile" class="btn btn-secondary">About Me</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img-wrap">
+        <img src="./img/girl.png" alt="Kae Amenomori">
+        <div class="hero-badge">UI/UX<br>Designer<br>★Tokyo★</div>
+        <div class="hero-sticker">✦ Since 2018</div>
+      </div>
+    </div>
+  </section>
+  <!-- Works -->
+  <section id="works">
+    <div class="section-header">
+      <h2 class="section-title">Selected<br><span>Works</span></h2>
+      <span class="section-count">07 Projects</span>
+    </div>
+    <div class="works-grid">
+      <div class="work-card">
+        <div class="work-hd"><span class="work-num">01 / Biganlab</span><div class="dots"><span></span><span></span><span></span></div></div>
+        <div class="work-img">
+          <img src="./img/biganlab_01.png" alt="Biganlab">
+          <div class="work-overlay"><span>View Project →</span></div>
         </div>
-        <div class="drop-container">
-          <div class="drop"></div>
+        <div class="work-body">
+          <p class="work-title">Biganlab</p>
+          <a href="./biganlab.html" class="work-btn">Open ↗</a>
         </div>
       </div>
-      <div class="works" id="works">   
-        <div class="works-title">works</div>
-        <div class="works-items">
-          <div class="works-item"><a href="./biganlab.html"><img src="./img/biganlab_01.png"></a></div>
-          <div class="works-item"><a href="./ekitan.html"><img src="./img/ekitan_01.png"></a></div>
-          <div class="works-item"><a href="./appliv10th.html"><img src="./img/appliv10th_01.png"></a></div>
-          <div class="works-item"><a href="./aimado.html"><img src="./img/aimado_01.png"></a></div>
-          <div class="works-item"><a href="./makibishi.html"><img src="./img/makibishi_01.png"></a></div>
-          <div class="works-item"><a href="./homesugi.html"><img src="./img/homesugi_01.png"></a></div>
-          <div class="works-item"><a href="./twitterux.html"><img src="./img/twitterux_01.png"></a></div>
-          <!-- <div class="works-item"><a href="./proscons.html"><img src="./img/proscons_top.png"></a></div> -->
-          <!-- <div class="works-item"><img src="./img/lasela-ab_top.png"></div> -->
-          <!-- <div class="works-item"><img src="./img/awa01.png"></div> -->
-          <!-- <div class="works-item"><img src="./img/pairs.png"></div> -->
-          <!-- <div class="works-item"><img src="./img/lasela-banner_top.png"></div>
-          <div class="works-item"><img src="./img/picsart-banner_top.png"></div>
-          <div class="works-item"><img src="./img/deai-deta_top.png"></div> -->
+      <div class="work-card">
+        <div class="work-hd"><span class="work-num">02 / Ekitan</span><div class="dots"><span></span><span></span><span></span></div></div>
+        <div class="work-img">
+          <img src="./img/ekitan_01.png" alt="Ekitan">
+          <div class="work-overlay"><span>View Project →</span></div>
         </div>
-        <!-- <div class="works-morebtn">
-          <a href="">もっと見る↓</a>
-        </div> -->
+        <div class="work-body">
+          <p class="work-title">Ekitan</p>
+          <a href="./ekitan.html" class="work-btn">Open ↗</a>
+        </div>
       </div>
-      <div class="profile">
-        <div class="left">
-          <div class="profile-title">
-              profile
-          </div>
-          <div class="profile-contents">
-            <div class="profile-image">
-              <img class="girl" src="./img/proflie-image.jpg">
-            </div>
-            <ul>
-              <li><b>雨森 加恵</b><br>アメノモリ カエ</li>
-            </ul> 
-            <div class="profile-skill">skill</div>
-            <p>Photoshop/illustrater/Figma/<br>
-            HTML/CSS/Javascript（勉強中）
-            </p>
-          </div>
-          
+      <div class="work-card">
+        <div class="work-hd"><span class="work-num">03 / Appliv 10th</span><div class="dots"><span></span><span></span><span></span></div></div>
+        <div class="work-img">
+          <img src="./img/appliv10th_01.png" alt="Appliv 10th">
+          <div class="work-overlay"><span>View Project →</span></div>
+        </div>
+        <div class="work-body">
+          <p class="work-title">Appliv 10th Anniversary</p>
+          <a href="./appliv10th.html" class="work-btn">Open ↗</a>
+        </div>
       </div>
+      <div class="work-card">
+        <div class="work-hd"><span class="work-num">04 / Aimado</span><div class="dots"><span></span><span></span><span></span></div></div>
+        <div class="work-img">
+          <img src="./img/aimado_01.png" alt="Aimado">
+          <div class="work-overlay"><span>View Project →</span></div>
+        </div>
+        <div class="work-body">
+          <p class="work-title">Aimado</p>
+          <a href="./aimado.html" class="work-btn">Open ↗</a>
+        </div>
       </div>
-    </body>
-  </main>
-  <footer>©︎kae amenomori</footer>
+      <div class="work-card">
+        <div class="work-hd"><span class="work-num">05 / Makibishi</span><div class="dots"><span></span><span></span><span></span></div></div>
+        <div class="work-img">
+          <img src="./img/makibishi_01.png" alt="Makibishi">
+          <div class="work-overlay"><span>View Project →</span></div>
+        </div>
+        <div class="work-body">
+          <p class="work-title">Makibishi</p>
+          <a href="./makibishi.html" class="work-btn">Open ↗</a>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="work-hd"><span class="work-num">06 / Homesugi</span><div class="dots"><span></span><span></span><span></span></div></div>
+        <div class="work-img">
+          <img src="./img/homesugi_01.png" alt="Homesugi">
+          <div class="work-overlay"><span>View Project →</span></div>
+        </div>
+        <div class="work-body">
+          <p class="work-title">Homesugi</p>
+          <a href="./homesugi.html" class="work-btn">Open ↗</a>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="work-hd"><span class="work-num">07 / Twitter UX</span><div class="dots"><span></span><span></span><span></span></div></div>
+        <div class="work-img">
+          <img src="./img/twitterux_01.png" alt="Twitter UX">
+          <div class="work-overlay"><span>View Project →</span></div>
+        </div>
+        <div class="work-body">
+          <p class="work-title">Twitter UX Study</p>
+          <a href="./twitterux.html" class="work-btn">Open ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Profile -->
+  <section id="profile">
+    <div class="profile-inner">
+      <div class="profile-img-col">
+        <div class="profile-img-frame">
+          <img src="./img/proflie-image.jpg" alt="Kae Amenomori">
+        </div>
+        <div class="profile-img-tag">東京 / Tokyo</div>
+      </div>
+      <div class="profile-content">
+        <span class="profile-label">✦ Profile</span>
+        <h2 class="profile-name">KAE<br><span class="accent">AME</span><br>NOMORI</h2>
+        <p class="profile-name-jp">雨森 加恵 — UI / UX Designer</p>
+        <p class="profile-bio">
+          東京を拠点に活動するUI/UXデザイナー。<br>
+          アプリ・Webサービス・ブランドビジュアルなど幅広い領域でデザインを手がけています。<br><br>
+          使いやすさと見た目の楽しさを両立した、ユーザーに寄り添ったデザインを追求しています。
+        </p>
+        <p class="skills-title">// Tools & Skills</p>
+        <div class="skills-list">
+          <span class="skill-chip">Photoshop</span>
+          <span class="skill-chip">Illustrator</span>
+          <span class="skill-chip">Figma</span>
+          <span class="skill-chip">HTML</span>
+          <span class="skill-chip">CSS</span>
+          <span class="skill-chip">JavaScript</span>
+          <span class="skill-chip">UI Design</span>
+          <span class="skill-chip">UX Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <p class="footer-cta">Let's make<br>something<br><span class="wiggle">★</span> fun!</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:hello@kaeamenomori.com" class="footer-link">✉ Email Me</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Kae Amenomori</span>
+      <span class="footer-sub">UI/UX Designer — Tokyo, Japan</span>
+    </div>
+  </footer>
+  <script>
+    // Custom cursor
+    const cur = document.getElementById('cur');
+    const ring = document.getElementById('cur-ring');
+    let mx=0,my=0,rx=0,ry=0;
+    document.addEventListener('mousemove', e=>{
+      mx=e.clientX; my=e.clientY;
+      cur.style.left=mx+'px'; cur.style.top=my+'px';
+    });
+    (function loop(){
+      rx+=(mx-rx)*.13; ry+=(my-ry)*.13;
+      ring.style.left=rx+'px'; ring.style.top=ry+'px';
+      requestAnimationFrame(loop);
+    })();
+    document.querySelectorAll('a').forEach(el=>{
+      el.addEventListener('mouseenter',()=>{ cur.style.transform='translate(-50%,-50%) scale(1.8)'; cur.style.background='var(--yellow)'; });
+      el.addEventListener('mouseleave',()=>{ cur.style.transform='translate(-50%,-50%) scale(1)'; cur.style.background='var(--pink)'; });
+    });
+    // Scroll progress bar
+    const bar = document.getElementById('progress');
+    window.addEventListener('scroll',()=>{
+      const pct = window.scrollY/(document.body.scrollHeight-window.innerHeight)*100;
+      bar.style.width=pct+'%';
+    });
+    // Scroll reveal for work cards
+    const obs = new IntersectionObserver(entries=>{
+      entries.forEach((e,i)=>{
+        if(e.isIntersecting) setTimeout(()=>e.target.classList.add('visible'), i*90);
+      });
+    },{threshold:0.08});
+    document.querySelectorAll('.work-card').forEach(el=>obs.observe(el));
+  </script>
 </body>
 </html>
